@@ -5,13 +5,13 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
-    '@nuxtjs/eslint-module',
     '@vueuse/nuxt',
     '@nuxt/image',
     '@nuxtjs/color-mode',
     '@nuxtjs/google-fonts',
     '@nuxt/content',
     '@nuxt/ui',
+    '@nuxt/eslint',
     'nuxt-simple-robots',
   ]
 })
