@@ -4,6 +4,9 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 export default <Partial<Config>>{
    theme: {
       extend: {
+         fontFamily: {
+            sans: ['Lexend Deca', ...defaultTheme.fontFamily.sans],
+         },
          colors: {
             tradewind: {
                '50': '#f3faf9',

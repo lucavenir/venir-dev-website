@@ -3,11 +3,17 @@ export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
   modules: [
     '@nuxt/ui',
+    '@nuxt/fonts',
     '@nuxt/content',
     '@nuxtjs/i18n',
     '@pinia/nuxt',
     '@vueuse/nuxt',
     '@nuxt/image',
-    '@nuxtjs/google-fonts',
-  ]
+  ],
+  ui: {
+    icons: ['ph', 'simple-icons']
+  },
+  colorMode: {
+    preference: 'dark'
+  }
 })
