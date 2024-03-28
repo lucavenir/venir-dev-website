@@ -1,10 +1,13 @@
 export default defineNuxtConfig({
+  app: {
+    head: { link: [{ rel: 'icon', type: 'image/png', href: '/icon/favicon-dark.ico' }] },
+  },
   devtools: { enabled: true },
   extends: ['@nuxt/ui-pro'],
   modules: [
+    '@nuxt/content',
     '@nuxt/ui',
     '@nuxt/fonts',
-    '@nuxt/content',
     '@nuxtjs/i18n',
     '@pinia/nuxt',
     '@vueuse/nuxt',
