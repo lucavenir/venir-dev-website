@@ -1,8 +1,14 @@
 import type { Config } from 'tailwindcss'
+import { iconsPlugin, getIconCollections } from "@egoist/tailwindcss-icons"
 import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default <Partial<Config>>{
    darkMode: 'class',
+   plugins: [
+      iconsPlugin({
+         collections: getIconCollections("all"),
+      })
+   ],
    theme: {
       extend: {
          fontFamily: {

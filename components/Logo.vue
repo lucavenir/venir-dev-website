@@ -2,10 +2,9 @@
 const colorMode = useColorMode();
 const logo = computed(
   () => colorMode.value == 'dark'
-    ? '/img/venir-dev-icon-light.png'
-    : '/img/venir-dev-icon-dark.png'
+    ? '/logo/venir-dev-logo-light.png'
+    : '/logo/venir-dev-logo-dark.png'
 );
-console.log(logo.value);
 </script>
 
 <template>
