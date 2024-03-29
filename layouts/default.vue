@@ -1,10 +1,17 @@
 <script setup lang="ts">
 const app = useNuxtApp();
 const { activeHeadings, updateHeadings } = useScrollspy();
+watchArray(activeHeadings, (newList, oldList, added, removed) => {
+  console.log(newList)
+  console.log(oldList)
+  console.log(added)
+  console.log(removed)
+})
+const path = useLocalePath();
 
 const links = computed(() => [{
   label: 'Home',
-  icon: 'i-heroicons-home',
+  icon: 'i-heroicons-',
   to: '#home',
   active: activeHeadings.value.includes('home')
 }, {
@@ -20,7 +27,7 @@ const links = computed(() => [{
   icon: 'i-heroicons-person',
   to: '#about'
 }, {
-  label: 'Releases',
+  label: 'Contact',
   icon: 'i-heroicons-mail',
   to: '#contact',
 }]);
@@ -44,7 +51,7 @@ useFavicon(favicon, { rel: 'icon' })
 
 <template>
   <UHeader :links="links">
-    <template #logo>
+    <template #logo :to="path">
       <Logo class="w-auto max-h-28 my-12" />
     </template>
 

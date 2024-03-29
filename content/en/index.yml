@@ -1,0 +1,53 @@
+title: venir.dev - SW Engineering
+description: With passion, We build Software you can love.
+home:
+  hi: Hi 👋🏽 My name is
+  name: Luca Venir
+  description: Need to ship Software?
+  links:
+    - label: Let's go!
+      icon: i-ph-rocket-launch
+      to: "#contact"
+      size: xl
+services:
+  headline: Services
+  title: How can we help you?
+  description: You can count on us for all your software needs.
+  items:
+    - title: App Development
+      description: If you need desktop/mobile-first Software, We can help you build it.
+      icon: i-heroicons-todo
+    - title: Web Development
+      description: Need a web app? We got you covered with the latest technologies.
+      icon: i-heroicons-todo
+    - title: Websites
+      description: We build fast, cheap landing pages and websites for your business.
+      icon: i-heroicons-lock-todo
+    - title: Ad-Hoc Projects
+      description: We can build it, with you! Just tell us what you need and we'll make it happen.
+      icon: i-heroicons-rocket-launch
+    - title: Consultancy
+      description: If you ever need our advice, we'll be here to help you.
+      icon: i-heroicons-currency-dollar
+    - title: Training and Education
+      description: We can help you learn how to code, or to deepen your knowledge, so that you can build your own software.
+      icon: i-heroicons-chart-bar
+history:
+  headline: Case History
+  title: Where have we been so far?
+  description: Let our work speak for itself.
+  imgs:
+    - moto
+    - mysc
+    - nuvolaris
+    - san benedetto
+    - archeido
+about:
+  title: About me
+  description: I'm a Software Engineer; I build software you can love, together with partners and associates.
+contact:
+  title: Let's talk
+  description: Whatever your needs are, chances are I can help you with that!
+  links:
+    - label: 💬 Let's meet!
+      size: xl

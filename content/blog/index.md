@@ -1,7 +1,7 @@
 ---
-title: Introduction
+title: Blog page
 ---
 
-Learn how to use @nuxt/content.
-<!--more-->
-Full amount of content beyond the more divider.
+Yes, some day, here, you'll see some blog posts.
+
+Crazy, I know.

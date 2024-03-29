@@ -1,0 +1,53 @@
+title: venir.dev - SW Engineering
+description: With passion, We build Software you can love.
+home:
+  hi: Ciao 👋🏽 Mi chiamo
+  name: Luca Venir
+  description: Vuoi sviluppare un progetto digitale?
+  links:
+    - label: Iniziamo!
+      icon: i-ph-rocket-launch
+      to: "#contact"
+      size: xl
+services:
+  headline: Servizi
+  title: Come possiamo aiutarti?
+  description: Puoi contare su di noi per tutte le tue esigenze software.
+  items:
+    - title: Sviluppo di App
+      description: Se hai bisogno di Software desktop/mobile-first, possiamo aiutarti.
+      icon: i-heroicons-todo
+    - title: Sviluppo Web
+      description: Hai bisogno di un'app web? Lo possiamo fare, con le ultime tecnologie.
+      icon: i-heroicons-todo
+    - title: Siti Web
+      description: Costruiamo landing page e siti web veloci ed economici per la tua attività.
+      icon: i-heroicons-lock-todo
+    - title: Progetti Software su Misura
+      description: Possiamo costruirlo, insieme a te! Spiegaci cosa ti serve, e lo faremo accadere.
+      icon: i-heroicons-rocket-launch
+    - title: Consulenza
+      description: Se hai bisogno di un nostro consiglio, siamo qui per aiutarti.
+      icon: i-heroicons-currency-dollar
+    - title: Formazione ed Educazione
+      description: Possiamo insegnarti a imparare a programmare, o ad approfondire le tue skill.
+      icon: i-heroicons-chart-bar
+history:
+  headline: Case History
+  title: Collaborazioni passate
+  description: Lascia che sia il nostro lavoro a parlare.
+  imgs:
+    - moto
+    - mysc
+    - nuvolaris
+    - san benedetto
+    - archeido
+about:
+  title: Su di me
+  description: Sono un Ingegnere del Software; ho una forte passione per il Software _fatto bene_.
+contact:
+  title: Parliamone!
+  description: Qualunque siano le tue esigenze, è probabile che io possa aiutarti!
+  links:
+    - label: 💬 Troviamoci!
+      size: xl
