@@ -1,9 +1,9 @@
 title: venir.dev - SW Engineering
-description: With passion, We build Software you can love.
+description: Scrivo Software che puoi usare, con passione.
 home:
   hi: Ciao 👋🏽 Mi chiamo
   name: Luca Venir
-  description: Vuoi sviluppare un progetto digitale?
+  description: Vuoi avviare un progetto?
   links:
     - label: Iniziamo!
       icon: i-ph-rocket-launch
@@ -11,43 +11,80 @@ home:
       size: xl
 services:
   headline: Servizi
-  title: Come possiamo aiutarti?
-  description: Puoi contare su di noi per tutte le tue esigenze software.
+  title: Come posso aiutarti?
+  description: Puoi affidarti a me (e al mio network) per le tue esigenze digitali.
   items:
-    - title: Sviluppo di App
-      description: Se hai bisogno di Software desktop/mobile-first, possiamo aiutarti.
-      icon: i-heroicons-todo
-    - title: Sviluppo Web
-      description: Hai bisogno di un'app web? Lo possiamo fare, con le ultime tecnologie.
-      icon: i-heroicons-todo
-    - title: Siti Web
-      description: Costruiamo landing page e siti web veloci ed economici per la tua attività.
-      icon: i-heroicons-lock-todo
-    - title: Progetti Software su Misura
-      description: Possiamo costruirlo, insieme a te! Spiegaci cosa ti serve, e lo faremo accadere.
-      icon: i-heroicons-rocket-launch
-    - title: Consulenza
-      description: Se hai bisogno di un nostro consiglio, siamo qui per aiutarti.
-      icon: i-heroicons-currency-dollar
-    - title: Formazione ed Educazione
-      description: Possiamo insegnarti a imparare a programmare, o ad approfondire le tue skill.
+    - title: Sviluppo App
+      description: Se hai bisogno di Software desktop/mobile, posso aiutarti a costruirlo.
+      icon: i-ph-paper-plane-tilt
+    - title: Formazione e Didattica
+      description: Posso aiutarti a imparare a programmare, o ad approfondire le tue conoscenze, così che tu possa essere autonomo.
       icon: i-heroicons-chart-bar
+    - title: Consulenza
+      description: Se avrai mai bisogno del mio aiuto, sarò qui per te.
+      icon: i-ph-person
+    - title: Sviluppo Web
+      description: Hai bisogno di un'app web? Lavoriamoci, con le ultime tecnologie.
+      icon: i-ph-webhooks-logo
+    - title: Siti Web
+      description: Costruisco landing page e siti web veloci ed economici per la tua attività.
+      icon: i-ph-at
+    - title: Progetti su Misura
+      description: Possiamo realizzarlo, con te! Dimmi solo cosa ti serve e lo farò accadere.
+      icon: i-ph-rocket
 history:
   headline: Case History
-  title: Collaborazioni passate
-  description: Lascia che sia il nostro lavoro a parlare.
-  imgs:
-    - moto
-    - mysc
-    - nuvolaris
-    - san benedetto
-    - archeido
+  title: Referenze
+  description: Ecco qualche progetto che può ispirarti
+  clients:
+    - id: 1
+      name: Moto.it
+      description: Sto manutenendo l'app mobile di moto.it
+      icon: i-ph-motorcycle
+      link: https://play.google.com/store/apps/details?id=it.moto.annunci
+    - id: 2
+      name: My Social Collection
+      description: Una piattaforma mobile-first per collezionisti
+      icon: i-ph-copy
+      link: https://www.linkedin.com/company/my-social-collection/
+    - id: 3
+      name: Hr Assistant
+      description: Un'app web per aiutare gli HR a gestire i dati dei loro dipendenti.
+      icon: i-ph-person-arms-spread
+      link: https://hr-assistant.it/human-resources-management-software/
 about:
-  title: Su di me
-  description: Sono un Ingegnere del Software; ho una forte passione per il Software _fatto bene_.
+  headline: Su di me
+  title: Conosciamoci
+  description: 30 anni, padre di Nora, vivo a Udine.
+  bio:
+    - title: Ingegneria
+      description: Amo costruire prodotti che le persone possano effettivamente apprezzare.
+    - title: Open Source
+      description: Contribuisco e sponsorizzo progetti open source, per quanto posso.
+    - title: Lavoro di Squadra
+      description: Voglio costruire ed espandere il mio team, così che possiamo aiutare più persone, insieme.
+  skills:
+    - name: Flutter
+      icon: i-material-symbols-flutter
+      status: Attualmente sto costruendo software con Dart e Flutter. Ho diverse contribuzioni open source e sono attivo nella community.
+    - name: Vue 3
+      icon: i-simple-icons-vuedotjs
+      status: Sto sperimentando con Vue 3 e Nuxt 3. È uno degli ecosistemi più belli e ben fatti del web.
+    - name: Elixir
+      icon: i-simple-icons-elixir
+      status: Scrivere codice con Elixir è molto piacevole! Amo i linguaggi funzionali; sto valutando Elixir per un prossimo progetto.
+    - name: Go
+      icon: i-fa6-brands-golang
+      status: Il mio primo linguaggio è stato C; voglio provare Go e costruirci qualcosa sopra.
 contact:
-  title: Parliamone!
-  description: Qualunque siano le tue esigenze, è probabile che io possa aiutarti!
+  title: Ok, parliamone
+  description: Qualunque siano le tue esigenze, è abbastanza probabile ch'io possa aiutarti!
   links:
-    - label: 💬 Troviamoci!
+    - label: 📹 Vediamoci!
       size: xl
+      url: https://calendar.google.com/calendar/selfsched?sstoken=UUM0UlBuMExudkc3fGRlZmF1bHR8Yzc1OGRlYjZmODg5OWYxNWQzOTZmODUyNjk1ODBiYTE
+      variant: solid
+    - label: ✍🏽 Scrivimi
+      size: xl
+      url: mailto:services@venir.dev
+      variant: link
