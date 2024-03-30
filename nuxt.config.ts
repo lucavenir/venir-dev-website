@@ -24,9 +24,9 @@ export default defineNuxtConfig({
     locales: ['en', 'it'],
   },
   i18n: {
-    strategy: 'prefix',
+    strategy: 'prefix_except_default',
     defaultLocale: 'en',
-    baseUrl: process.env.BASE_URL || 'https://localhost:3000',
+    baseUrl: process.env.BASE_URL || 'https://localhost:3000/',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
@@ -34,7 +34,7 @@ export default defineNuxtConfig({
     },
     locales: [
       { code: 'en', iso: 'en-US' },
-      { code: 'fr', iso: 'fr-FR' },
+      { code: 'it', iso: 'it-IT' },
     ]
   },
 });
