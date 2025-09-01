@@ -35,27 +35,52 @@ defmodule VenirDevWebsiteWeb.Layouts do
 
   def app(assigns) do
     ~H"""
+    <style>
+      /* if [data-theme] is set */
+      html[data-theme="dark"] .logo-dark,
+      html[data-theme="light"] .logo-light {
+        display: block;
+      }
+      html[data-theme="dark"] .logo-light,
+      html[data-theme="light"] .logo-dark {
+        display: none;
+      }
+
+      /* if [data-theme] is not set use preferences */
+      html:not([data-theme]) .logo-light { display: block; }
+      html:not([data-theme]) .logo-dark { display: none; }
+      @media (prefers-color-scheme: dark) {
+      html:not([data-theme]) .logo-dark { display: block; }
+      html:not([data-theme]) .logo-light { display: none; }
+      }
+    </style>
     <header class="navbar px-4 sm:px-6 lg:px-8">
       <div class="flex-1">
         <a href="/" class="flex-1 flex w-fit items-center gap-2">
-          <img src={~p"/images/logo.svg"} width="36" />
-          <span class="text-sm font-semibold">v{Application.spec(:phoenix, :vsn)}</span>
+          <img
+            alt="venir dot dev logo"
+            src={~p"/images/venir-dev-logo-dark.png"}
+            class="w-42 pb-2 logo-dark"
+          />
+          <img
+            alt="venir dot dev logo"
+            src={~p"/images/venir-dev-logo-light.png"}
+            class="w-42 pb-2 logo-light"
+          />
         </a>
       </div>
       <div class="flex-none">
         <ul class="flex flex-column px-1 space-x-4 items-center">
           <li>
-            <a href="https://phoenixframework.org/" class="btn btn-ghost">Website</a>
+            <a href={~p"/blog"} class="btn btn-ghost">Blog</a>
           </li>
           <li>
-            <a href="https://github.com/phoenixframework/phoenix" class="btn btn-ghost">GitHub</a>
-          </li>
-          <li>
-            <.theme_toggle />
-          </li>
-          <li>
-            <a href="https://hexdocs.pm/phoenix/overview.html" class="btn btn-primary">
-              Get Started <span aria-hidden="true">&rarr;</span>
+            <a
+              href="https://github.com/lucavenir"
+              class="btn btn-ghost"
+              target="_blank"
+            >
+              GitHub
             </a>
           </li>
         </ul>
