@@ -28,33 +28,33 @@
   prefersdark: true;
   color-scheme: "dark";
   --color-base-100: oklch(19.98% 0.005 284.15);
-  --color-base-200: oklch(14.54% 0.003 284.15);
-  --color-base-300: oklch(9.99% 0.002 284.15);
-  --color-base-content: oklch(97.77% 0.002 284.15);
-  --color-primary: oklch(67.43% 0.068 184.77);
+  --color-base-200: oklch(12.54% 0.003 284.15);
+  --color-base-300: oklch(5.99% 0.002 284.15);
+  --color-base-content: oklch(98.5% 0.002 284.15);
+  --color-primary: oklch(75% 0.075 184.77);
   --color-primary-content: oklch(13.67% 0.002 284.15);
-  --color-secondary: oklch(81.99% 0.126 73.17);
+  --color-secondary: oklch(80% 0.095 320);
   --color-secondary-content: oklch(13.67% 0.002 284.15);
-  --color-accent: oklch(66.57% 0.076 211.51);
+  --color-accent: oklch(83.99% 0.135 73.17);
   --color-accent-content: oklch(13.67% 0.002 284.15);
-  --color-neutral: oklch(37.49% 0.015 284.15);
-  --color-neutral-content: oklch(97.77% 0.002 284.15);
-  --color-info: oklch(71.43% 0.098 253.25);
+  --color-neutral: oklch(37.49% 0.015 265);
+  --color-neutral-content: oklch(98.5% 0.002 284.15);
+  --color-info: oklch(80% 0.098 253.25);
   --color-info-content: oklch(13.67% 0.002 284.15);
-  --color-success: oklch(68.34% 0.103 151.76);
+  --color-success: oklch(78% 0.103 151.76);
   --color-success-content: oklch(13.67% 0.002 284.15);
-  --color-warning: oklch(76.24% 0.147 88.01);
+  --color-warning: oklch(80% 0.147 88.01);
   --color-warning-content: oklch(13.67% 0.002 284.15);
-  --color-error: oklch(61.85% 0.187 23.94);
+  --color-error: oklch(70% 0.187 23.94);
   --color-error-content: oklch(13.67% 0.002 284.15);
-  --radius-selector: 0.125rem;
-  --radius-field: 0.125rem;
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
   --radius-box: 0.25rem;
-  --size-selector: 0.21875rem;
-  --size-field: 0.21875rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
   --border: 1.5px;
-  --depth: 1;
-  --noise: 0;
+  --depth: 0;
+  --noise: 1;
 }
 
 @plugin "../vendor/daisyui-theme" {
@@ -62,34 +62,34 @@
   default: true;
   prefersdark: false;
   color-scheme: "light";
-  --color-base-100: oklch(98% 0 0);
-  --color-base-200: oklch(96% 0.001 286.375);
-  --color-base-300: oklch(92% 0.004 286.32);
-  --color-base-content: oklch(21% 0.006 285.885);
-  --color-primary: oklch(67.43% 0.068 184.77);
-  --color-primary-content: oklch(97.77% 0.002 284.15);
-  --color-secondary: oklch(81.99% 0.126 73.17);
-  --color-secondary-content: oklch(13.67% 0.002 284.15);
-  --color-accent: oklch(66.57% 0.076 211.51);
-  --color-accent-content: oklch(97.77% 0.002 284.15);
-  --color-neutral: oklch(50.62% 0.02 284.76);
-  --color-neutral-content: oklch(97.77% 0.002 284.15);
-  --color-info: oklch(71.43% 0.098 253.25);
-  --color-info-content: oklch(97.77% 0.002 284.15);
-  --color-success: oklch(68.34% 0.103 151.76);
-  --color-success-content: oklch(97.77% 0.002 284.15);
-  --color-warning: oklch(76.24% 0.147 88.01);
-  --color-warning-content: oklch(13.67% 0.002 284.15);
-  --color-error: oklch(61.85% 0.187 23.94);
-  --color-error-content: oklch(97.77% 0.002 284.15);
-  --radius-selector: 0.125rem;
-  --radius-field: 0.125rem;
+  --color-base-100: oklch(98% 0.005 284.15);
+  --color-base-200: oklch(95.5% 0.003 284.15);
+  --color-base-300: oklch(92% 0.002 284.15);
+  --color-base-content: oklch(15% 0.002 284.15);
+  --color-primary: oklch(58.91% 0.05 186.27);
+  --color-primary-content: oklch(98.5% 0.002 284.15);
+  --color-secondary: oklch(40% 0.095 320);
+  --color-secondary-content: oklch(98.5% 0.002 284.15);
+  --color-accent: oklch(76.24% 0.147 88.01);
+  --color-accent-content: oklch(15% 0.002 284.15);
+  --color-neutral: oklch(94% 0.01 100);
+  --color-neutral-content: oklch(15% 0.002 284.15);
+  --color-info: oklch(40% 0.098 253.25);
+  --color-info-content: oklch(98.5% 0.002 284.15);
+  --color-success: oklch(40% 0.103 151.76);
+  --color-success-content: oklch(98.5% 0.002 284.15);
+  --color-warning: oklch(40% 0.147 88.01);
+  --color-warning-content: oklch(98.5% 0.002 284.15);
+  --color-error: oklch(40% 0.187 23.94);
+  --color-error-content: oklch(98.5% 0.002 284.15);
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
   --radius-box: 0.25rem;
-  --size-selector: 0.21875rem;
-  --size-field: 0.21875rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
   --border: 1.5px;
-  --depth: 1;
-  --noise: 0;
+  --depth: 0;
+  --noise: 1;
 }
 
 /* Add variants based on LiveView classes */
@@ -107,3 +107,48 @@
 }
 
 /* This file is for your main application CSS */
+@theme {
+  --font-sans: "fustat", sans-serif;
+}
+
+@font-face {
+  font-family: 'fustat';
+  src: url('/fonts/Fustat-ExtraLight.ttf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'fustat';
+  src: url('/fonts/Fustat-Light.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'fustat';
+  src: url('/fonts/Fustat-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'fustat';
+  src: url('/fonts/Fustat-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'fustat';
+  src: url('/fonts/Fustat-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'fustat';
+  src: url('/fonts/Fustat-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'fustat';
+  src: url('/fonts/Fustat-ExtraBold.ttf');
+  font-weight: 800;
+}
