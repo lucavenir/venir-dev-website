@@ -31,6 +31,85 @@ defmodule VenirDevWebsiteWeb.CoreComponents do
 
   alias Phoenix.LiveView.JS
 
+  slot :title, doc: "the card's title", required: true
+  slot :inner_block, doc: "the card's content", required: true
+  attr :class, :string, default: nil
+
+  @doc """
+  Renders a card component.
+  Accepts a title and content, both must be specified.
+  """
+  def card(assigns) do
+    ~H"""
+    <div class={[
+      "card bg-neutral text-neutral-content max-w-96 px-6 py-4",
+      @class
+    ]}>
+      {render_slot(@title)}
+      {render_slot(@inner_block)}
+    </div>
+    """
+  end
+
+  attr :class, :string, default: nil
+  attr :id, :string, required: true
+  slot :title, required: true
+  slot :inner_block, doc: "the inner block that renders the section content", required: true
+
+  @doc """
+  Renders a section component.
+
+  Accepts a required title attribute and a mandatory content slot.
+  """
+  def section(assigns) do
+    ~H"""
+    <section
+      id={@id}
+      class={[
+        "w-full py-4 sm:py-16 px-4 sm:px-8 md:px-12 lg:px-16 m-0",
+        @class
+      ]}
+    >
+      {render_slot(@title)}
+      {render_slot(@inner_block)}
+    </section>
+    """
+  end
+
+  slot :inner_block, required: true
+  attr :class, :string, default: nil
+
+  @doc """
+  Renders an h2 element with the given content.
+  """
+  def h2(assigns) do
+    ~H"""
+    <h2 class={[
+      "text-2xl sm:text-3xl font-bold text-center mb-2 sm:mb-8",
+      @class
+    ]}>
+      {render_slot(@inner_block)}
+    </h2>
+    """
+  end
+
+  slot :inner_block, required: true
+  attr :class, :string, default: nil
+
+  @doc """
+  Renders an h3 element with the given content.
+  """
+  def h3(assigns) do
+    ~H"""
+    <h3 class={[
+      "font-semibold text-xl mb-4",
+      @class
+    ]}>
+      {render_slot(@inner_block)}
+    </h3>
+    """
+  end
+
   @doc """
   Renders flash notices.
 
@@ -389,6 +468,43 @@ defmodule VenirDevWebsiteWeb.CoreComponents do
         </div>
       </li>
     </ul>
+    """
+  end
+
+  @doc """
+  Provides dark vs light theme toggle based on themes defined in app.css.
+
+  See <head> in root.html.heex which applies the theme before page load.
+  """
+  def theme_toggle(assigns) do
+    ~H"""
+    <div class="card relative flex flex-row items-center border-2 border-base-300 bg-base-300 rounded-full">
+      <div class="absolute w-1/3 h-full rounded-full border-1 border-base-200 bg-base-100 brightness-200 left-0 [[data-theme=light]_&]:left-1/3 [[data-theme=dark]_&]:left-2/3 transition-[left]" />
+
+      <button
+        class="flex p-2 cursor-pointer w-1/3"
+        phx-click={JS.dispatch("phx:set-theme")}
+        data-phx-theme="system"
+      >
+        <.icon name="hero-computer-desktop-micro" class="size-4 opacity-75 hover:opacity-100" />
+      </button>
+
+      <button
+        class="flex p-2 cursor-pointer w-1/3"
+        phx-click={JS.dispatch("phx:set-theme")}
+        data-phx-theme="light"
+      >
+        <.icon name="hero-sun-micro" class="size-4 opacity-75 hover:opacity-100" />
+      </button>
+
+      <button
+        class="flex p-2 cursor-pointer w-1/3"
+        phx-click={JS.dispatch("phx:set-theme")}
+        data-phx-theme="dark"
+      >
+        <.icon name="hero-moon-micro" class="size-4 opacity-75 hover:opacity-100" />
+      </button>
+    </div>
     """
   end
 
