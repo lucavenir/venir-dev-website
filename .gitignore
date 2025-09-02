@@ -35,3 +35,6 @@ venir_dev_website-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# LSP logs
+/.expert/
+/.lexical/
