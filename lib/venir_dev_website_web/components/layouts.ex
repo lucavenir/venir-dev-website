@@ -54,24 +54,21 @@ defmodule VenirDevWebsiteWeb.Layouts do
       html:not([data-theme]) .logo-light { display: none; }
       }
     </style>
-    <header class="navbar px-4 sm:px-6 lg:px-8">
-      <div class="flex-1">
-        <a href="/" class="flex-1 flex w-fit items-center gap-2">
-          <img
-            alt="venir dot dev logo"
-            src={~p"/images/venir-dev-logo-dark.png"}
-            class="w-42 pb-2 logo-dark"
-          />
-          <img
-            alt="venir dot dev logo"
-            src={~p"/images/venir-dev-logo-light.png"}
-            class="w-42 pb-2 logo-light"
-          />
-        </a>
-      </div>
-      <div class="flex-none">
-        <ul class="flex flex-column px-1 space-x-4 items-center">
-          <%!-- <li>
+    <header class="navbar relative py-0 my-0 bg-base-100 flex flex-row items-center justify-between shadow-sm flex">
+      <a href="/" class="max-w-32 sm:w-fit items-center gap-2">
+        <img
+          alt="venir dot dev logo"
+          src={~p"/images/venir-dev-logo-dark.png"}
+          class="logo-dark"
+        />
+        <img
+          alt="venir dot dev logo"
+          src={~p"/images/venir-dev-logo-light.png"}
+          class="logo-light"
+        />
+      </a>
+      <ul class="flex flex-row  gap-x-2 sm:gap-x-4 items-center justify-end">
+        <%!-- <li>
             <a href={~p"/blog"} class="btn btn-ghost">Blog</a>
           </li>
           <li>
@@ -81,26 +78,46 @@ defmodule VenirDevWebsiteWeb.Layouts do
             <a href={~p"/community"} class="btn btn-ghost">Community</a>
           </li> --%>
 
-          <li>
-            <.link
-              href="https://github.com/lucavenir"
-              class="btn btn-ghost"
-              target="_blank"
-            >
-              GitHub
-            </.link>
-          </li>
-          <li>
-            <.button
-              variant="primary"
-              href="https://calendar.app.google/AiFNg8iPcUdrq9769"
-              target="_blank"
-            >
-              Let's meet!
-            </.button>
-          </li>
-        </ul>
-      </div>
+        <li>
+          <.button
+            variant="primary"
+            href="https://calendar.app.google/AiFNg8iPcUdrq9769"
+            target="_blank"
+          >
+            Let's meet!
+          </.button>
+        </li>
+        <button
+          id="nav-menu-button"
+          aria-label="open main menu"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+          phx-click={JS.toggle_class("hidden", to: "#nav-menu")}
+          class="btn btn-ghost"
+          type="button"
+        >
+          <.icon name="hero-bars-3" class="size-6" />
+        </button>
+        <nav
+          id="nav-menu"
+          class="hidden absolute right-0 top-full w-48 bg-base-100 shadow-md z-50"
+          aria-label="Main menu"
+        >
+          <ul class="flex flex-col items-end  gap-2 px-2">
+            <%!-- <li><.link href="/blog">Blog</.link></li>
+            <li><.link href="/portfolio"> Portfolio</.link></li>
+            <li><.link href="/community"> Community </.link></li> --%>
+            <li>
+              <.link
+                href="https://github.com/lucavenir"
+                target="_blank"
+              >
+                GitHub
+              </.link>
+            </li>
+          </ul>
+        </nav>
+      </ul>
     </header>
 
     <main>
