@@ -77,33 +77,30 @@ defmodule VenirDevWebsiteWeb.Layouts do
             Let's meet!
           </.button>
         </li>
-        <button
-          id="nav-menu-button"
-          aria-label="open main menu"
-          aria-controls="nav-menu"
-          aria-expanded="false"
-          phx-click={JS.toggle_class("hidden", to: "#nav-menu")}
-          class="btn btn-ghost"
-          type="button"
-        >
-          <.icon name="hero-bars-3" class="size-6" />
-        </button>
-        <nav
-          id="nav-menu"
-          class="hidden absolute right-0 top-full w-48 bg-base-100 shadow-md z-50"
-          aria-label="Main menu"
-        >
-          <ul class="flex flex-col items-end  gap-2 px-2">
-            <li>
-              <.link
-                href="https://github.com/lucavenir"
-                target="_blank"
-              >
-                GitHub
-              </.link>
-            </li>
-          </ul>
-        </nav>
+        <li>
+          <button
+            id="nav-menu-button"
+            aria-label="open main menu"
+            aria-controls="nav-menu"
+            aria-expanded="false"
+            phx-click={JS.toggle_class("hidden", to: "#nav-menu")}
+            class="btn btn-ghost"
+            type="button"
+          >
+            <.icon name="hero-bars-3" class="size-6" />
+          </button>
+        </li>
+        <li id="nav-menu" class="hidden absolute right-0 top-full w-48 bg-base-100 shadow-md z-50">
+          <nav aria-label="Main menu">
+            <ul class="flex flex-col items-end  gap-2 px-2">
+              <li>
+                <.link href="https://github.com/lucavenir" target="_blank">
+                  GitHub
+                </.link>
+              </li>
+            </ul>
+          </nav>
+        </li>
       </ul>
     </header>
 
