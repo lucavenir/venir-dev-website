@@ -17,8 +17,7 @@ defmodule VenirDevWebsiteWeb do
   those modules here.
   """
 
-  def static_paths,
-    do: ~w(assets fonts images favicon-light.ico favicon-dark.ico robots.txt)
+  def static_paths, do: ~w(assets fonts images icons robots.txt)
 
   def router do
     quote do
