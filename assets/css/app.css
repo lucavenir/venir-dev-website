@@ -1,0 +1,154 @@
+/* See the Tailwind configuration guide for advanced usage
+   https://tailwindcss.com/docs/configuration */
+
+@import "tailwindcss" source(none);
+@source "../../deps/ash_authentication_phoenix";
+@source "../css";
+@source "../js";
+@source "../../lib/venir_dev_website_web";
+
+/* A Tailwind plugin that makes "hero-#{ICON}" classes available.
+   The heroicons installation itself is managed by your mix.exs */
+@plugin "../vendor/heroicons";
+
+/* daisyUI Tailwind Plugin. You can update this file by fetching the latest version with:
+   curl -sLO https://github.com/saadeghi/daisyui/releases/latest/download/daisyui.js
+   Make sure to look at the daisyUI changelog: https://daisyui.com/docs/changelog/ */
+@plugin "../vendor/daisyui" {
+  themes: false;
+}
+
+/* daisyUI theme plugin. You can update this file by fetching the latest version with:
+  curl -sLO https://github.com/saadeghi/daisyui/releases/latest/download/daisyui-theme.js
+  We ship with two themes, a light one inspired on Phoenix colors and a dark one inspired
+  on Elixir colors. Build your own at: https://daisyui.com/theme-generator/ */
+@plugin "../vendor/daisyui-theme" {
+  name: "dark";
+  default: false;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-base-100: oklch(19.98% 0.005 284.15);
+  --color-base-200: oklch(12.54% 0.003 284.15);
+  --color-base-300: oklch(5.99% 0.002 284.15);
+  --color-base-content: oklch(98.5% 0.002 284.15);
+  --color-primary: oklch(75% 0.075 184.77);
+  --color-primary-content: oklch(13.67% 0.002 284.15);
+  --color-secondary: oklch(80% 0.095 320);
+  --color-secondary-content: oklch(13.67% 0.002 284.15);
+  --color-accent: oklch(83.99% 0.135 73.17);
+  --color-accent-content: oklch(13.67% 0.002 284.15);
+  --color-neutral: oklch(37.49% 0.015 265);
+  --color-neutral-content: oklch(98.5% 0.002 284.15);
+  --color-info: oklch(80% 0.098 253.25);
+  --color-info-content: oklch(13.67% 0.002 284.15);
+  --color-success: oklch(78% 0.103 151.76);
+  --color-success-content: oklch(13.67% 0.002 284.15);
+  --color-warning: oklch(80% 0.147 88.01);
+  --color-warning-content: oklch(13.67% 0.002 284.15);
+  --color-error: oklch(70% 0.187 23.94);
+  --color-error-content: oklch(13.67% 0.002 284.15);
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.25rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1.5px;
+  --depth: 0;
+  --noise: 1;
+}
+
+@plugin "../vendor/daisyui-theme" {
+  name: "light";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(98% 0.005 284.15);
+  --color-base-200: oklch(95.5% 0.003 284.15);
+  --color-base-300: oklch(92% 0.002 284.15);
+  --color-base-content: oklch(15% 0.002 284.15);
+  --color-primary: oklch(58.91% 0.05 186.27);
+  --color-primary-content: oklch(98.5% 0.002 284.15);
+  --color-secondary: oklch(40% 0.095 320);
+  --color-secondary-content: oklch(98.5% 0.002 284.15);
+  --color-accent: oklch(76.24% 0.147 88.01);
+  --color-accent-content: oklch(15% 0.002 284.15);
+  --color-neutral: oklch(94% 0.01 100);
+  --color-neutral-content: oklch(15% 0.002 284.15);
+  --color-info: oklch(40% 0.098 253.25);
+  --color-info-content: oklch(98.5% 0.002 284.15);
+  --color-success: oklch(40% 0.103 151.76);
+  --color-success-content: oklch(98.5% 0.002 284.15);
+  --color-warning: oklch(40% 0.147 88.01);
+  --color-warning-content: oklch(98.5% 0.002 284.15);
+  --color-error: oklch(40% 0.187 23.94);
+  --color-error-content: oklch(98.5% 0.002 284.15);
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.25rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1.5px;
+  --depth: 0;
+  --noise: 1;
+}
+
+/* Add variants based on LiveView classes */
+@custom-variant phx-click-loading (.phx-click-loading&, .phx-click-loading &);
+@custom-variant phx-submit-loading (.phx-submit-loading&, .phx-submit-loading &);
+@custom-variant phx-change-loading (.phx-change-loading&, .phx-change-loading &);
+
+/* Use the data attribute for dark mode  */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+/* Make LiveView wrapper divs transparent for layout */
+[data-phx-session],
+[data-phx-teleported-src] {
+  display: contents
+}
+
+/* This file is for your main application CSS */
+@theme {
+  --font-sans: "fustat", sans-serif;
+}
+
+@font-face {
+  font-family: 'fustat';
+  src: url('/fonts/Fustat-ExtraLight.ttf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'fustat';
+  src: url('/fonts/Fustat-Light.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'fustat';
+  src: url('/fonts/Fustat-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'fustat';
+  src: url('/fonts/Fustat-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'fustat';
+  src: url('/fonts/Fustat-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'fustat';
+  src: url('/fonts/Fustat-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'fustat';
+  src: url('/fonts/Fustat-ExtraBold.ttf');
+  font-weight: 800;
+}

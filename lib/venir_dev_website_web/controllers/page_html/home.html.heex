@@ -1,0 +1,120 @@
+<Layouts.app flash={@flash}>
+  <div class="flex flex-col items-center justify-content">
+    <section class="w-full py-4 sm:py-8 flex flex-col flex-col-reverse sm:flex-row justify-evenly items-center bg-base-100">
+      <div class="flex flex-col gap-4 sm:gap-12 items-center px-8 pt-4">
+        <h1 class="text-lg text-center sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-extrabold tracking-tight">
+          Let's reach the <span class="text-primary">peak</span>.
+        </h1>
+
+        <p class="text-base-content/80 text-center max-w-lg text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium tracking-normal leading-relaxed">
+          Building great <span class="text-accent">software</span> can be a rocky trail,
+          so let's conquer the climb, <span class="text-accent">together.</span>
+        </p>
+      </div>
+      <img
+        class="w-full p-4 h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl rounded-sm"
+        src="/images/venir-dev.png"
+        alt="venir helps you climb a mountain"
+      />
+    </section>
+
+    <.section id="intro" class="bg-base-300">
+      <:title>
+        <.h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold tracking-tight text-center">
+          Hello 👋🏽
+        </.h2>
+
+        <h3 class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold mb-8 text-center tracking-tight">
+          My name is <span class="text-primary">Luca Venir</span>.
+        </h3>
+      </:title>
+      <div class="mt-4 sm:mt-16 flex flex-col items-center gap-4 text-center">
+        <div class="pb-4">
+          <p class="text-sm sm:text-base md:text-lg lg:text-xl font-normal leading-relaxed">
+            Coding since 2006, and doing it professionally since 2019.
+          </p>
+          <p class="text-sm sm:text-base md:text-lg lg:text-xl font-normal leading-relaxed">
+            Obsessive about idiomatic, functional and maintainable code, I create reliable, durable <span class="text-accent">software you can love</span>.
+          </p>
+        </div>
+        <div class="pb-4">
+          <p class="text-sm sm:text-base md:text-lg lg:text-xl font-normal leading-relaxed">
+            I'm a business-minded Software Engineer: I care about the business impact of my work.
+          </p>
+          <p class="text-sm sm:text-base md:text-lg lg:text-xl font-normal leading-relaxed">
+            In 2022 I've co-founded <.link class="underline" href="https://wde.it" target="_blank">WDE</.link>,
+            a <span class="text-accent">product-centric</span> software house.
+          </p>
+        </div>
+      </div>
+    </.section>
+
+    <.section id="services" class="bg-base-100">
+      <:title>
+        <.h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold tracking-tight text-center">
+          Know-how and <span class="text-primary">Services</span>
+        </.h2>
+      </:title>
+      <div class="flex flex-col items-center gap-4 md:flex-row md:items-stretch md:justify-evenly">
+        <.card>
+          <:title>
+            <.h3 class="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold tracking-tight">
+              Software <span class="">Engineering</span>
+            </.h3>
+          </:title>
+          <p class="text-sm sm:text-base md:text-lg font-normal leading-relaxed">
+            I can design and develop tailored software solutions: platforms, applications, websites.
+          </p>
+        </.card>
+        <.card>
+          <:title>
+            <.h3 class="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold tracking-tight">
+              <span class="">Training</span> and Consultancy
+            </.h3>
+          </:title>
+          <p class="text-sm sm:text-base md:text-lg font-normal leading-relaxed">
+            I can help your team grow and acquire critical know-how about software development.
+          </p>
+        </.card>
+        <.card>
+          <:title>
+            <.h3 class="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold tracking-tight">
+              <span class="">Entrepreneurship</span> and Startups
+            </.h3>
+          </:title>
+          <p class="text-sm sm:text-base md:text-lg font-normal leading-relaxed">
+            I can actually understand your business needs, and I am able to go well beyond just coding.
+          </p>
+        </.card>
+      </div>
+    </.section>
+
+    <.section id="contact" class="bg-base-300">
+      <:title>
+        <.h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold tracking-tight text-center">
+          Are you <span class="text-primary">ready</span> to hike?
+        </.h2>
+      </:title>
+      <div class="max-w-2xl mx-auto flex flex-col items-center gap-6">
+        <p class="text-sm sm:text-base md:text-lg font-normal leading-relaxed text-center">
+          The first step of any great journey is the <span class="text-accent">plan</span>!
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <.button
+            variant="primary"
+            href="https://calendar.google.com/calendar/selfsched?sstoken=UUM0UlBuMExudkc3fGRlZmF1bHR8Yzc1OGRlYjZmODg5OWYxNWQzOTZmODUyNjk1ODBiYTE"
+          >
+            Let's meet!
+          </.button>
+
+          <.button
+            class="btn btn-secondary btn-soft"
+            href="mailto:services@venir.dev"
+          >
+            Email me
+          </.button>
+        </div>
+      </div>
+    </.section>
+  </div>
+</Layouts.app>
