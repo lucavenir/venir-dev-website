@@ -9,13 +9,13 @@ defmodule VenirDevWebsite.Application do
   def start(_type, _args) do
     children = [
       VenirDevWebsiteWeb.Telemetry,
-      VenirDevWebsite.Repo,
+      # VenirDevWebsite.Repo,
       {DNSCluster, query: Application.get_env(:venir_dev_website, :dns_cluster_query) || :ignore},
-      {Oban,
-       AshOban.config(
-         Application.fetch_env!(:venir_dev_website, :ash_domains),
-         Application.fetch_env!(:venir_dev_website, Oban)
-       )},
+      # {Oban,
+      #  AshOban.config(
+      #    Application.fetch_env!(:venir_dev_website, :ash_domains),
+      #    Application.fetch_env!(:venir_dev_website, Oban)
+      #  )},
       {Phoenix.PubSub, name: VenirDevWebsite.PubSub},
       # Start a worker by calling: VenirDevWebsite.Worker.start_link(arg)
       # {VenirDevWebsite.Worker, arg},
