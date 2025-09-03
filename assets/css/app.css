@@ -112,43 +112,50 @@
 }
 
 @font-face {
-  font-family: 'fustat';
+  font-family: 'fustat', sans-serif;
+  font-display: swap;
   src: url('/fonts/Fustat-ExtraLight.ttf');
   font-weight: 200;
 }
 
 @font-face {
-  font-family: 'fustat';
+  font-family: 'fustat', sans-serif;
+  font-display: swap;
   src: url('/fonts/Fustat-Light.ttf');
   font-weight: 300;
 }
 
 @font-face {
-  font-family: 'fustat';
+  font-family: 'fustat', sans-serif;
+  font-display: swap;
   src: url('/fonts/Fustat-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'fustat';
+  font-family: 'fustat', sans-serif;
+  font-display: swap;
   src: url('/fonts/Fustat-Medium.ttf');
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'fustat';
+  font-family: 'fustat', sans-serif;
+  font-display: swap;
   src: url('/fonts/Fustat-SemiBold.ttf');
   font-weight: 600;
 }
 
 @font-face {
-  font-family: 'fustat';
+  font-family: 'fustat', sans-serif;
+  font-display: swap;
   src: url('/fonts/Fustat-Bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
-  font-family: 'fustat';
+  font-family: 'fustat', sans-serif;
+  font-display: swap;
   src: url('/fonts/Fustat-ExtraBold.ttf');
   font-weight: 800;
 }

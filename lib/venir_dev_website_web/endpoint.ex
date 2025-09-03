@@ -24,6 +24,7 @@ defmodule VenirDevWebsiteWeb.Endpoint do
     at: "/",
     from: :venir_dev_website,
     gzip: not code_reloading?,
+    headers: %{"cache-control" => "public, max-age=31536000"},
     only: VenirDevWebsiteWeb.static_paths()
 
   # Code reloading can be explicitly enabled under the

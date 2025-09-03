@@ -58,12 +58,12 @@ defmodule VenirDevWebsiteWeb.Layouts do
       <a href="/" class="max-w-32 sm:w-fit items-center gap-2">
         <img
           alt="venir dot dev logo"
-          src={~p"/images/venir-dev-logo-dark.png"}
+          src={~p"/images/venir-dev-logo-dark.webp"}
           class="logo-dark"
         />
         <img
           alt="venir dot dev logo"
-          src={~p"/images/venir-dev-logo-light.png"}
+          src={~p"/images/venir-dev-logo-light.webp"}
           class="logo-light"
         />
       </a>
