@@ -68,16 +68,6 @@ defmodule VenirDevWebsiteWeb.Layouts do
         />
       </a>
       <ul class="flex flex-row  gap-x-2 sm:gap-x-4 items-center justify-end">
-        <%!-- <li>
-            <a href={~p"/blog"} class="btn btn-ghost">Blog</a>
-          </li>
-          <li>
-            <a href={~p"/portfolio"} class="btn btn-ghost">Portfolio</a>
-          </li>
-          <li>
-            <a href={~p"/community"} class="btn btn-ghost">Community</a>
-          </li> --%>
-
         <li>
           <.button
             variant="primary"
@@ -104,9 +94,6 @@ defmodule VenirDevWebsiteWeb.Layouts do
           aria-label="Main menu"
         >
           <ul class="flex flex-col items-end  gap-2 px-2">
-            <%!-- <li><.link href="/blog">Blog</.link></li>
-            <li><.link href="/portfolio"> Portfolio</.link></li>
-            <li><.link href="/community"> Community </.link></li> --%>
             <li>
               <.link
                 href="https://github.com/lucavenir"
