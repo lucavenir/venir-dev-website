@@ -43,36 +43,36 @@ defmodule VenirDevWebsiteWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
-    auth_routes AuthController, VenirDevWebsite.Accounts.User, path: "/auth"
-    sign_out_route AuthController
+    # auth_routes AuthController, VenirDevWebsite.Accounts.User, path: "/auth"
+    # sign_out_route AuthController
 
     # Remove these if you'd like to use your own authentication views
-    sign_in_route register_path: "/register",
-                  reset_path: "/reset",
-                  auth_routes_prefix: "/auth",
-                  on_mount: [{VenirDevWebsiteWeb.LiveUserAuth, :live_no_user}],
-                  overrides: [
-                    VenirDevWebsiteWeb.AuthOverrides,
-                    AshAuthentication.Phoenix.Overrides.Default
-                  ]
+    # sign_in_route register_path: "/register",
+    #               reset_path: "/reset",
+    #               auth_routes_prefix: "/auth",
+    #               on_mount: [{VenirDevWebsiteWeb.LiveUserAuth, :live_no_user}],
+    #               overrides: [
+    #                 VenirDevWebsiteWeb.AuthOverrides,
+    #                 AshAuthentication.Phoenix.Overrides.Default
+    #               ]
 
     # Remove this if you do not want to use the reset password feature
-    reset_route auth_routes_prefix: "/auth",
-                overrides: [
-                  VenirDevWebsiteWeb.AuthOverrides,
-                  AshAuthentication.Phoenix.Overrides.Default
-                ]
+    # reset_route auth_routes_prefix: "/auth",
+    #             overrides: [
+    #               VenirDevWebsiteWeb.AuthOverrides,
+    #               AshAuthentication.Phoenix.Overrides.Default
+    #             ]
 
     # Remove this if you do not use the confirmation strategy
-    confirm_route VenirDevWebsite.Accounts.User, :confirm_new_user,
-      auth_routes_prefix: "/auth",
-      overrides: [VenirDevWebsiteWeb.AuthOverrides, AshAuthentication.Phoenix.Overrides.Default]
+    # confirm_route VenirDevWebsite.Accounts.User, :confirm_new_user,
+    #   auth_routes_prefix: "/auth",
+    #   overrides: [VenirDevWebsiteWeb.AuthOverrides, AshAuthentication.Phoenix.Overrides.Default]
 
     # Remove this if you do not use the magic link strategy.
-    magic_sign_in_route(VenirDevWebsite.Accounts.User, :magic_link,
-      auth_routes_prefix: "/auth",
-      overrides: [VenirDevWebsiteWeb.AuthOverrides, AshAuthentication.Phoenix.Overrides.Default]
-    )
+    # magic_sign_in_route(VenirDevWebsite.Accounts.User, :magic_link,
+    #   auth_routes_prefix: "/auth",
+    #   overrides: [VenirDevWebsiteWeb.AuthOverrides, AshAuthentication.Phoenix.Overrides.Default]
+    # )
   end
 
   # Other scopes may use custom stacks.
