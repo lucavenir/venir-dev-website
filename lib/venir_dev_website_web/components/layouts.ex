@@ -124,6 +124,9 @@ defmodule VenirDevWebsiteWeb.Layouts do
       {render_slot(@inner_block)}
     </main>
 
+    <footer class="w-full py-8 px-4 sm:px-8 md:px-16 lg:px-32 text-center text-base-content/60 mt-auto">
+      <p>&copy; 2025 Luca Venir. All rights reserved.</p>
+    </footer>
     <.flash_group flash={@flash} />
     """
   end
