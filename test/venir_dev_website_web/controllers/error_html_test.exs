@@ -5,7 +5,8 @@ defmodule VenirDevWebsiteWeb.ErrorHTMLTest do
   import Phoenix.Template, only: [render_to_string: 4]
 
   test "renders 404.html" do
-    assert render_to_string(VenirDevWebsiteWeb.ErrorHTML, "404", "html", []) == "Not Found"
+    assert render_to_string(VenirDevWebsiteWeb.ErrorHTML, "404", "html", []) =~
+             "the page you're looking for doesn't exist"
   end
 
   test "renders 500.html" do
